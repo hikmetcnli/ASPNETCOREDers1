@@ -16,5 +16,5 @@ app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Inde
 //    return "Toplam:" + SUM.ToString();
 
 //});
-
+app.UseStaticFiles();
 app.Run();
