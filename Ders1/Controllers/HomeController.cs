@@ -13,6 +13,10 @@ namespace Ders1.Controllers
         {
             return "15";
         }
+        public string Sum2()
+        {
+            return "15";
+        }
 
 
     }
