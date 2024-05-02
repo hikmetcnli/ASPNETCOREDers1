@@ -5,7 +5,7 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}");
+app.MapControllerRoute(name: "default", pattern: "{controller=Order}/{action=Index}");
 
 
 //app.MapGet("/", () => {

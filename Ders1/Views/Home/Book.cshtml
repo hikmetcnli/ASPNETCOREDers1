@@ -1,0 +1,33 @@
+﻿@model List<Ders1.Models.Book>
+
+@{
+	Layout = "_Shared";
+	ViewData["Title"] = "Ürünler Ana Sayfa";
+}
+
+    @Html.Raw(@ViewBag.d1)
+   
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">BookName</th>
+            <th scope="col">Writer</th> 
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dr in Model)
+        {
+            <tr>
+                <th scope="row">@dr.Id</th>
+                <td>@dr.BookName</td>
+                <td>@dr.Writer</td> 
+            </tr> 
+        }
+            
+    </tbody>
+</table>
+
+
+ 

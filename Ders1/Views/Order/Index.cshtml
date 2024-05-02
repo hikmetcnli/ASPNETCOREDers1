@@ -1,0 +1,38 @@
+﻿@{
+	Layout = "_Shared";
+	ViewData["Title"] = "Siparişler Ana Sayfa....";
+}
+Burası Sipariş Sayfasıdır.
+
+<br />
+
+@DateTime.Now.ToString("yyyy-MM-dd HH:mm")
+
+<br />
+
+@for(int i = 1; i < 10; i++)
+{
+	<br />
+	@i
+}
+
+<br />
+
+@{
+	var Liste = new List<string>() { "Ordu", "Düzce", "Sakarya", "Kocaeli", "İstanbul" };
+}
+
+<ul style="list-style-type:none">
+	@foreach (var item in Liste)
+	{
+		<li style="border:1px solid #dedede;padding:5px;background-color:antiquewhite;text-decoration:none">@item</li>		
+	}
+</ul>
+
+@{
+	int a = 100; int b = 200;int c = a + b;
+}
+
+Toplam : @c
+
+
