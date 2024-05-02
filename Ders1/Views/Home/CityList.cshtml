@@ -1,0 +1,28 @@
+﻿@model List<Ders1.Models.City>
+
+@{
+    Layout = "_Shared"; 
+}
+ 
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">CityCode</th>
+            <th scope="col">City</th> 
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dr in Model)
+        {
+            <tr>
+                <th scope="row">@dr.CityCode</th>
+                <td>@dr.CityName</td> 
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+

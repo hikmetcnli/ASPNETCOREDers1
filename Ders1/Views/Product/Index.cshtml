@@ -1,7 +1,31 @@
-﻿@{
+﻿@model List<Ders1.Models.Product>
+
+
+@{
 	Layout = "_Shared";
 	ViewData["Title"] = "Ürünler Ürün Sayfa";
 }
 
 
-Burası Ürün Sayfasıdır.
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dr in Model)
+        {
+            <tr>
+                <th scope="row">@dr.Id</th> 
+                <td>@dr.ProductName</td>
+                <td>@dr.Category</td>
+                <td>@dr.Price</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
